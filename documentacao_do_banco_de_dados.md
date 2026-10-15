@@ -111,3 +111,9 @@ Implementação de um **SGBD Relacional (MySQL / MariaDB / PostgreSQL)** para ce
 ### 4ª Forma Normal (4FN)
 * **Regra:** Estar na 3FN e não conter dependências multivaloradas independentes dentro da mesma entidade.
 * **Aplicação:** Se armazenássemos múltiplos telefones e múltiplos endereços dentro da mesma tabela de cliente, seriam geradas combinações cartesianas redundantes e desnecessárias. O isolamento de `telefone_cliente` e `endereco_cliente` em tabelas separadas atende rigorosamente à 4FN.
+
+---
+
+# 6 Link do vercel
+
+* https://projetobanco2.vercel.app/
