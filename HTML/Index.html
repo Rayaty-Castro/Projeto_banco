@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Banco de Dados - VetCare</title>
+    <style>
+        :root { --primary: #2b6cb0; --bg: #f7fafc; --text: #2d3748; }
+        body { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: var(--primary); }
+        code { background: #edf2f7; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+        pre { background: #2d3748; color: #fff; padding: 15px; border-radius: 6px; overflow-x: auto; }
+        .badge { display: inline-block; background: #e2e8f0; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projeto de Banco de Dados: Clínica VetCare</h1>
+        <p><strong>Status:</strong> <span class="badge">Concluído</span> <span class="badge">Deploy Cloud (Aiven)</span></p>
+        
+        <h2>1. Visão Geral do Domínio</h2>
+        <p>O VetCare é um sistema relacional desenvolvido para eliminar problemas de inconsistência de dados em consultas veterinárias, prontuários, estoque e vendas de petshop.</p>
+
+        <h2>2. Normalização Aplicada</h2>
+        <ul>
+            <li><strong>1FN:</strong> Atributos atômicos e eliminação de campos multivalorados.</li>
+            <li><strong>2FN:</strong> Eliminação de dependências parciais em chaves compostas (ex: <code>item_venda</code>).</li>
+            <li><strong>3FN:</strong> Eliminação de dependências transitivas (ex: dados de veterinário isolados da consulta).</li>
+            <li><strong>4FN:</strong> Tratamento de dependências multivaloradas independentes.</li>
+        </ul>
+
+        <h2>3. Arquivos do Repositório</h2>
+        <p>Acesse as pastas do projeto para visualizar os scripts completos:</p>
+        <ul>
+            <li><code>/scripts/schema.sql</code> - DDL das tabelas</li>
+            <li><code>/scripts/data.sql</code> - DML de carga inicial (5+ registros)</li>
+            <li><code>/scripts/queries.sql</code> - 15 Consultas SQL com Inner Join, Group By, Subqueries</li>
+            <li><code>/dump/dump_vetcare.sql</code> - Backup completo</li>
+        </ul>
+    </div>
+</body>
+</html>
