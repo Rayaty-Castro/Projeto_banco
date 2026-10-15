@@ -52,7 +52,7 @@ A implantação de um **SGBD Relacional (PostgreSQL / MySQL)** visa centralizar 
 [PRODUTO]                   [MEDICAMENTO]
 
 
-## 4. Aplicação das Formas Normais
+## 5. Aplicação das Formas Normais
 
 ### 1ª Forma Normal (1FN) — Atomicidade e Eliminação de Repetições
 * **Conceito:** Cada coluna deve conter valores atômicos (indivisíveis) e não deve haver listas/grupos repetidos na mesma célula.
